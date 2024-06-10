@@ -15,8 +15,8 @@
             <nav>
                 <ul id="sidemenu">
                     <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" onclick="navigateAboutContact()">About</a></li>
+                    <li><a href="#contact" onclick="navigateAboutContact()">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
             </nav>
@@ -199,6 +199,27 @@
         function closemenu(){
             sidemenu.style.right="-200px";
         }
+
+        const navigateAboutContact = ()=>{
+            const col_one = document.getElementById("col-1");
+            col_one.style.display="none"
+
+            const imgdiv =document.getElementsByClassName("col-2")
+            imgdiv[0].classList.toggle("toggling")
+            const image = document.getElementsByClassName("img")
+            image[0].classList.toggle("imagetoggling")
+            console.log(image[0].style)
+
+            const about = document.getElementById("about");
+            const contacts = document.getElementById("contact")
+            
+            if(about.style.display !== "inline"){
+                about.style.display="inline"
+                contacts.style.display="block";
+            }
+          
+        }
+
         const swipe = ()=>{
             
          if(window.innerWidth >600 ){

@@ -603,4 +603,12 @@ form .btn1{
     .tab-links{
         display: block;
     }
+    .project-tab{
+        margin-top: 20px;
+        position:relative;
+        width:300px;
+        border-radius: 30px;
+        overflow: hidden;
+        transition: all 1.5s;
+    } 
 }

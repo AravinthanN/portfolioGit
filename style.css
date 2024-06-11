@@ -608,6 +608,8 @@ form .btn1{
     }
     .project-tab{
         margin-top: 20px;
+        justify-content: center;
+        align-items: center;
         position:relative;
         width:300px;
         border-radius: 30px;

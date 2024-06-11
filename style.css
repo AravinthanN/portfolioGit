@@ -12,8 +12,8 @@ body{
 }
 
 .portfolioContainer{
-    width: 100vw;
-    padding: 10px 10px;
+    /* width: 100vw; */
+    padding: 10px 15px;
 }
 
 /* ------------------------logo------------------------ */

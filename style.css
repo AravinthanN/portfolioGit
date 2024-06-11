@@ -607,9 +607,11 @@ form .btn1{
         display: block;
     }
     #projects{
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        
     }
     .project-tab{
         margin-top: 20px;

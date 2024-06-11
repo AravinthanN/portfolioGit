@@ -11,6 +11,14 @@ body{
     scroll-behavior: smooth;
 }
 
+/* ------------------------logo------------------------ */
+video{
+    
+     width: 200px;
+     height: 100px;
+     object-fit: cover;
+      pointer-events: none;
+}
 .row-1{
     display:flex;
     flex-direction: row;
@@ -90,7 +98,7 @@ span{
     background-color: aqua;
     border:5px solid rgb(0, 255, 21);
     box-shadow: 0px 0px 10px rgb(59, 247, 2);
-    z-index:100;
+    z-index:0;
     transition: all 1.5s ease;
     overflow: hidden;
 }
@@ -195,7 +203,7 @@ span{
 .skill-tab .skill-title h4{
     margin-bottom: 10px;
 }
-.skill-tab .bar{
+.skill-tab .barforskill{
     position:relative;
     width:100%;
     height: 5px;
@@ -205,7 +213,7 @@ span{
 
 }
 
-.skill-tab .bar span{
+.skill-tab .barforskill span{
     position:absolute;
     left:0;
     width:50%;
@@ -214,27 +222,27 @@ span{
     border: 3px solid rgb(9, 252, 220);
     box-shadow: 0px 0px 10px aqua;
     border-radius: 25px;
-    animation: bar 1.5s;
+    animation: barforskill 1.5s;
 }
 
 
-.skill-tab .bar .html{
+.skill-tab .barforskill .html{
     width:73%;
     animation:html 3s;
 }
-.skill-tab .bar .css{
+.skill-tab .barforskill .css{
     width:75%;
     animation:css 3.5s;
 }
-.skill-tab .bar .js{
+.skill-tab .barforskill .js{
     width:45%;
     animation:js 4s;
 }
-.skill-tab .bar .java{
+.skill-tab .barforskill .java{
     width:79%;
     animation:java 4.5s;
 }
-.skill-tab .bar .mysql{
+.skill-tab .barforskill .mysql{
     width:80%;
     animation:mysql 5s;
 }
@@ -429,15 +437,19 @@ form .btn1{
 
 /* -------------------small screens------------------ */
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
 
     /* bar */
     #bar{
         display:inline;
+        margin: 10px 10px;
+    }
+    .barforskill{
+        z-index:0;
     }
     nav{
         /* display:none; */
-        z-index:5;
+        z-index:0;
     }
     nav .fas{
         display:block;
@@ -455,10 +467,11 @@ form .btn1{
         top:0;
         right:-200px;
         width:200px;
-        height:100vh;
+        min-height:100vh;
         padding-top:50px;
         transition: right 1.5s;
-        color:#000000
+        color:#000000;
+        z-index: 10;
         
     }
     nav ul li{
@@ -476,6 +489,13 @@ form .btn1{
         /* position:relative; */
         color:rgb(20, 20, 20);
         text-decoration:none;
+    }
+    .row-1{
+        display:block;
+        justify-content: space-between;
+    }
+    .row-1 i{
+        cursor: pointer;
     }
     .row-2{
         display:flex;

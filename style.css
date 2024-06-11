@@ -443,9 +443,12 @@ form .btn1{
 
 /* -------------------small screens------------------ */
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
 
     /* bar */
+    video{
+        width:150px;
+    }
     #bar{
         display:inline;
         margin: 10px 10px;

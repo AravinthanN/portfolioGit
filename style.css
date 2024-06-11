@@ -11,8 +11,9 @@ body{
     scroll-behavior: smooth;
 }
 
-portfolioContainer{
+.portfolioContainer{
     width: 100vw;
+    padding: 10px 10px;
 }
 
 /* ------------------------logo------------------------ */

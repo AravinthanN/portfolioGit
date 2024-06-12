@@ -111,7 +111,7 @@ span{
     display:none;
 }
  .img{
-    height:330px;
+    height:430px;
 }
 
 .row-2 .col-1 h5{
@@ -543,7 +543,7 @@ form .btn1{
         display:none;
     }
     .col-2-non-swipeable img{
-        height:200px;
+        height:260px;
     }
     .about{
         display:flex;
